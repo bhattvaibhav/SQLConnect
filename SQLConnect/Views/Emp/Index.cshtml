@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SQLConnect.Modal.Employee>
+
+<table>
+    @foreach (var obj in Model)
+    {
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+            @obj.Name
+        </td>
+        <td>
+            Age
+        </td>
+        <td>
+            @obj.Age
+        </td>
+        <td>
+            City
+        </td>
+        <td>
+            @obj.City
+        </td>
+    </tr>
+    }
+</table>
